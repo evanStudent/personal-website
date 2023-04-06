@@ -67,6 +67,10 @@ a
 a:hover
 {
     color: black;
+}
+
+nav > a:hover
+{
     text-decoration: underline;
 }
 
@@ -125,6 +129,7 @@ p
     justify-content: flex-start;
     align-items: center;
     position: static;
+    text-decoration: none;
 }
 
 .main

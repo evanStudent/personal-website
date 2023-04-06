@@ -55,19 +55,13 @@ a
 a:hover
 {
     color: black;
-    text-decoration: underline;
+    
 }
 
-/* img
+nav > a:hover
 {
-    width: 50%;
-    height: 100%;
-    object-fit: cover;
-    padding-top:2vw;
-    padding-left:2vw;
-
-    /* border: 2px blue solid; */
-} */
+    text-decoration: underline;
+}
 
 p
 {
@@ -132,6 +126,7 @@ td
     justify-content: flex-start;
     align-items: center;
     position: static;
+    text-decoration: none;
 }
 
 .main
