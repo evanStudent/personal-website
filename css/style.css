@@ -196,6 +196,7 @@ p > a
 
     #site_title_mobile
     {
+        text-align:center;
         font-size:3vh;
     }
 
@@ -272,8 +273,8 @@ p > a
     {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-between;
     
-        height:80vh;
+        height:100vh;
     }
 }
