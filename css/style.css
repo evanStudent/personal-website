@@ -39,7 +39,8 @@ h2
 nav
 {
     font-family: 'DM Mono', monospace;
-    font-size: 1vw;
+    font-size: 1.5vw;
+    font-size: 12px + 1.5vw;
     gap: 3vw;
     padding-right:3vw;
 }
@@ -52,6 +53,7 @@ nav > a:hover
 a
 {
     padding: 3vw;
+    font-size: 12px + 1.5vw;
     text-decoration: none;
     color: black;
 }
@@ -75,7 +77,13 @@ img
 p
 {
     font-size: 1vw;
+    font-size: 12px + 1.5vw;
     font-family: 'DM Mono', monospace;
+}
+
+p > a
+{
+    font-size: 12px + 1.5vw;
 }
 
 
@@ -112,6 +120,19 @@ p
     text-decoration: none;
 }
 
+.topnav_mobile
+{
+    display:none;
+}
+
+.main_mobile
+{display: none;}
+
+.sitename_mobile
+{
+    display: none;
+}
+
 .main
 {
     /* border: 2px red solid; */
@@ -135,6 +156,7 @@ p
     justify-content: flex-end;
     align-items: center;
     font-family: 'DM Mono', monospace;
+    font-size: 1.5vw;
 }
 
 .nowrap
@@ -150,10 +172,108 @@ p
     width:20px;
 }
 
-@media (max-width:800px) 
+@media (max-width:799px) 
 {
     .container
     {
+        display: flex;
         flex-direction:column;
+
+        height:100vh;
+
+    }
+
+    p 
+    {
+        font-size:2vh;
+        padding-right:10px;
+    }
+
+    #sitename
+    {
+        display: none;
+    }
+
+    #site_title_mobile
+    {
+        font-size:3vh;
+    }
+
+    img
+    {
+        display: none;
+        flex-direction:column;
+        justify-content:start;
+
+        padding-top:1.5vw;
+        padding-right:1vw;
+        width:100%;
+        height:70%;
+    };
+
+    .sitename_mobile
+    {
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .topnav_mobile
+    {
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    nav
+    {
+        padding-top:6vh;
+        margin-top:5vh;
+    }
+
+    nav > a:hover
+{
+    background-color: rgb(30, 30, 30);
+    color: white;
+}
+
+    .main
+    {
+        display: none;
+    }
+
+    .intro_text_computer
+    {
+        display:none;
+    }
+
+    .topnav
+    {
+        display:none;
+    }
+
+    .footer
+    {
+        display: none;
+    }
+
+    .nav_text
+    {
+        font-size:4vw;
+        text-align: center;
+        border: 1px black solid;
+        padding:2vw;
+
+    }
+
+    .main_mobile
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    
+        height:80vh;
     }
 }
