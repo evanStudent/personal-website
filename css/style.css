@@ -12,10 +12,10 @@ html, body
     
 } 
 
-h1
+h1 > a
 {
     font-family: 'Rubik Moonrocks', cursive;
-    font-size: 5vw;
+    font-size: calc(36px + 0.9vw);
     position: static;
 }
 
@@ -30,7 +30,7 @@ h2
     width: 50%;
 
     font-family: 'DM Mono', monospace;
-    font-size: 3.5vw;
+    font-size: calc(18px + 1.5vw);
 
     padding: 1vw;
 
@@ -39,9 +39,7 @@ h2
 nav
 {
     font-family: 'DM Mono', monospace;
-    font-size: 1.5vw;
-    font-size: 12px + 1.5vw;
-    gap: 3vw;
+    gap: calc(5px + 1.5vw);
     padding-right:3vw;
 }
 
@@ -52,8 +50,8 @@ nav > a:hover
 
 a
 {
+    font-size: calc(14px + 0.2vw);
     padding: 3vw;
-    font-size: 12px + 1.5vw;
     text-decoration: none;
     color: black;
 }
@@ -77,13 +75,8 @@ img
 p
 {
     font-size: 1vw;
-    font-size: 12px + 1.5vw;
+    font-size: calc(12px + 0.8vw);
     font-family: 'DM Mono', monospace;
-}
-
-p > a
-{
-    font-size: 12px + 1.5vw;
 }
 
 
@@ -138,15 +131,9 @@ p > a
 .main
 {
     /* border: 2px red solid; */
-
     height: 80%;
-
     display: flex;
-    
-
     padding:1vw;
-
-
 }
 
 
@@ -158,7 +145,7 @@ p > a
     justify-content: flex-end;
     align-items: center;
     font-family: 'DM Mono', monospace;
-    font-size: 1.5vw;
+    font-size: calc(12px + 0.2vw);
 }
 
 .nowrap
@@ -180,15 +167,16 @@ p > a
     {
         display: flex;
         flex-direction:column;
+        justify-content: start;
 
-        height:100vh;
+        height:100%;
 
     }
 
     p 
     {
-        font-size:2vh;
-        padding-right:10px;
+        font-size: calc(12px + 0.5vw);
+        padding-right:18px;
     }
 
     #sitename
@@ -199,7 +187,7 @@ p > a
     #site_title_mobile
     {
         text-align:center;
-        font-size:3vh;
+        font-size: calc(18px + 0.8vh);
     }
 
     img
@@ -232,15 +220,9 @@ p > a
 
     nav
     {
-        padding-top:6vh;
-        margin-top:5vh;
+        padding-top:3vh;
+        margin-top:3vh;
     }
-
-    nav > a:hover
-{
-    background-color: rgb(30, 30, 30);
-    color: white;
-}
 
     .main
     {
@@ -264,7 +246,6 @@ p > a
 
     .nav_text
     {
-        font-size:4vw;
         text-align: center;
         border: 1px black solid;
         padding:2vw;
@@ -275,8 +256,8 @@ p > a
     {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: start;
     
-        height:100vh;
+        height:100%;
     }
 }
