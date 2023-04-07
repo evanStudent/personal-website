@@ -80,18 +80,20 @@ table
 {
 display: flex;
 flex-direction: column;
+margin: calc(5px + 0.3vw);
+padding: calc(5px + 0.2vw);
 }
 
 th
 {
-    font-size: 2vw;
+    font-size: calc(12px + 0.5vw);
     font-family: 'DM Mono', monospace; 
     text-align: start;
 }
 
 td
 {
-    font-size: 1vw;
+    font-size: calc(9px + 0.3vw);
     font-family: 'DM Mono', monospace;
 }
 
