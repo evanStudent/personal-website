@@ -126,7 +126,9 @@ p > a
 }
 
 .main_mobile
-{display: none;}
+{
+    display: none;
+}
 
 .sitename_mobile
 {
