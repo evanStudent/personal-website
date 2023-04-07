@@ -15,24 +15,25 @@ html, body
 h1 > a
 {
     font-family: 'Rubik Moonrocks', cursive;
-    font-size: calc(36px + 0.9vw);
+    font-size: calc(40px + 0.9vw);
     position: static;
 }
 
 h2
 {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
 
     position: relative;
     width: 50%;
 
     font-family: 'DM Mono', monospace;
-    font-size: calc(18px + 1.5vw);
+    font-size: calc(18px + 0.5vw);
 
-    padding: 1vw;
+    padding-left: calc(10px + 2vw);
+    padding-right: 2vw;
 
 }
 
@@ -74,7 +75,6 @@ img
 
 p
 {
-    font-size: 1vw;
     font-size: calc(12px + 0.8vw);
     font-family: 'DM Mono', monospace;
 }

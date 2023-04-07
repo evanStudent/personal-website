@@ -12,10 +12,10 @@ html, body
     
 } 
 
-h1
+h1 > a
 {
     font-family: 'Rubik Moonrocks', cursive;
-    font-size: 5vw;
+    font-size: calc(40px + 0.9vw);
     position: static;
 }
 
@@ -40,13 +40,13 @@ h2
 nav
 {
     font-family: 'DM Mono', monospace;
-    font-size: 1vw;
-    gap: 3vw;
+    gap: calc(5px + 1.5vw);
     padding-right:3vw;
 }
 
 a
 {
+    font-size: calc(14px + 0.2vw);
     padding: 3vw;
     text-decoration: none;
     color: black;
@@ -65,7 +65,7 @@ nav > a:hover
 
 p
 {
-    font-size: 1vw;
+    font-size: calc(12px + 0.8vw);
     font-family: 'DM Mono', monospace;
 }
 
@@ -187,9 +187,8 @@ td
     display: flex;
     justify-content: flex-end;
     align-items: center;
-
     font-family: 'DM Mono', monospace;
-    font-size: 1vw;
+    font-size: calc(12px + 0.2vw);
 }
 
 .nowrap
