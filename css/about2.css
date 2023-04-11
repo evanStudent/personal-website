@@ -210,6 +210,97 @@ td
 {
     .container
     {
+        display: flex;
         flex-direction:column;
+        min-height: 100vh;
+        /* overflow: auto; */
     }
+
+    .header
+    {display: flex;
+    flex-direction: row;
+    justify-content: center;}
+
+    .sitename
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+
+        text-align: center;
+
+    }
+
+    h1 > a 
+    {
+        font-size: calc(20px + 2vw);
+    }
+
+    .topnav
+    {
+        background-color: #ffffff;
+        color: #272727;
+        padding: 20px;
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        font-size: calc(18px+0.5vw);
+    }
+
+    .main
+    {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        overflow: scroll;
+        width:100%;
+    }
+
+    .skills
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    /* #people_skills_mobile
+    {
+        display:none;
+    } */
+
+    #admin_skills_mobile
+    {
+        display:none;
+    } 
+
+    .bottom
+    {
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+    }
+
+    th
+    {
+        font-size: calc(14px + 1.6vw);
+        font-family: 'DM Mono', monospace; 
+        text-align: start;
+    }
+
+    td
+    {
+        font-size: calc(12px + 1vw);
+        font-family: 'DM Mono', monospace;
+    }
+
+    .footer
+    {
+        display: none;
+    }
+
 }
