@@ -285,6 +285,14 @@ p
     h1 > a 
     {
         font-size: calc(20px + 2vw);
+        font-family: 'Rubik', sans-serif;
+    }
+
+
+    h2
+    {
+        font-size: calc(14px + 0.5vw);
+        white-space: nowrap;
     }
 
     .main
@@ -302,6 +310,7 @@ p
     img
     {
         width:100%;
+        padding-right:2vw;
     }
 
     .intro_text_computer

@@ -17,6 +17,7 @@ h1 > a
     font-family: 'Rubik Moonrocks', cursive;
     font-size: calc(40px + 0.9vw);
     position: static;
+    
 }
 
 h2
@@ -218,6 +219,7 @@ p
     h1 > a 
     {
         font-size: calc(20px + 2vw);
+        font-family: 'Rubik', sans-serif;
     }
 
     .main

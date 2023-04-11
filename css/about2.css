@@ -235,6 +235,7 @@ td
     h1 > a 
     {
         font-size: calc(20px + 2vw);
+        font-family: 'Rubik', sans-serif;
     }
 
     .topnav
