@@ -266,6 +266,7 @@ p
         display: flex;
         flex-direction: column;
         padding-right:10px;
+        overflow: scroll;
     }
 
     .footer
