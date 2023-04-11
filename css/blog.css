@@ -265,6 +265,9 @@ p
     flex-direction: column;
     justify-content: center;
 
+    padding: 20px;
+
+    max-height: 200px;
     width: calc(300px + 0.5vw);
 }
 
@@ -272,6 +275,7 @@ video
 {
     display: flex;
     justify-content:center;
+
 }
 
 }
