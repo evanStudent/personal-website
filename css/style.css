@@ -142,6 +142,13 @@ p
     padding:1vw;
 }
 
+.intro_text_computer
+    {
+    
+        
+
+    }
+
 
 .footer
 {
@@ -295,7 +302,6 @@ p
         font-size: calc(14px + 0.5vw);
         white-space: nowrap;
     }
-
     .main
     {
         display: flex;
@@ -323,6 +329,7 @@ p
     .intro_text_mobile
     {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         width:100%
     }
