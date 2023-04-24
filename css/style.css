@@ -145,7 +145,7 @@ p
 
 .artist-intro
 {
-    padding-right:50px;
+    padding-right:35px;
     padding-bottom: 80px;
 }
 
@@ -177,6 +177,13 @@ p
 .nowrap
 {
     white-space: nowrap;
+}
+
+.spacer
+{
+    border: 2px;
+    min-height:15px;
+    min-width: 300px;
 }
 
 
