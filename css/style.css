@@ -31,7 +31,7 @@ h2
     width: 50%;
 
     font-family: 'DM Mono', monospace;
-    font-size: calc(18px + 0.5vw);
+    font-size: calc(14px + 1vw);
 
     padding-left: calc(10px + 2vw);
     padding-right: 2vw;
@@ -133,6 +133,25 @@ p
 .intro_text_mobile
 {
     display: none;
+}
+
+.intro_text_computer
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.artist-intro
+{
+    padding-right:50px;
+    padding-bottom: 80px;
+}
+
+.developer-intro
+{
+    padding-top:calc(80px + 1vw);
 }
 
 .main
