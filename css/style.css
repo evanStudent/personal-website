@@ -23,6 +23,7 @@ h2
 {
     font-family: 'DM Mono', monospace;
     font-size: calc(14px + 1vw);
+    /* background-color: rgba(255, 236, 236, 0.8); */
 }
 
 h3
@@ -43,7 +44,7 @@ nav
 nav > a:hover
 {
     text-decoration: underline;
-    color:rgb(90, 0, 174);
+    /* color:rgb(90, 0, 174); */
 }
 
 a
@@ -63,7 +64,8 @@ img
     width: 95%;
     height: 100%;
     object-fit: cover;
-    /* padding-left: 1vw; */
+    padding-left: 3vw;
+    border-radius: 1%;
     /* border: 2px blue solid; */
 }
 
@@ -98,7 +100,7 @@ p
 
 .sitename
 {
-    padding-left:2vh;
+    padding-left:4vw;
 
     display: flex;
     justify-content: flex-start;
@@ -153,6 +155,10 @@ p
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    background-color: rgb(213, 230, 61); 
+    color: rgb(6, 2, 2); 
+    
 }
 
 

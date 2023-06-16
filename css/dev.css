@@ -104,9 +104,10 @@ iframe
     position: static;
     text-decoration: none;
     /* padding-top: 1vw;
-    padding-left:3vw; */
+    
 
     /* border: purple solid 2px; */
+    padding-left:4vw; 
 }
 
 .topnav
@@ -148,6 +149,8 @@ iframe
     
     padding: 1vh;
     padding-top:1vw;
+    padding-left: 2vw;
+    padding-right: 1vw;
 }
 
 .post-media
