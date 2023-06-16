@@ -47,17 +47,13 @@ nav
 nav > a:hover
 {
     text-decoration: underline;
+    color:rgb(90, 0, 174);
 }
 
 a
 {
     font-size: calc(14px + 0.2vw);
     text-decoration: none;
-    color: black;
-}
-
-a:hover
-{
     color: black;
 }
 
@@ -148,15 +144,16 @@ iframe
     justify-content: space-between;
     align-items: center;
 
-    border-bottom: rgb(100, 100, 100, 30%) 1px solid;
+    border-bottom: rgb(90, 0, 174, 30%) 1px solid;
     
     padding: 1vh;
+    padding-top:1vw;
 }
 
-/* .post-media
+.post-media
 {
-    /* border: #272727 1px solid; */
-/* } */ 
+    width: 50%;
+}
 
 .post-info
 {
@@ -200,8 +197,8 @@ iframe
 
 .external-link
 {
-    color:rgb(113, 15, 205);
-    font-size: calc(10px + 0.8vw);
+    color:rgb(90, 0, 174);
+    font-size: calc(9px + 0.8vw);
     /* border:1px solid black;
     border-radius:25%; */
     padding:2px;
