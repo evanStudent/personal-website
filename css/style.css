@@ -144,7 +144,7 @@ p
 
 #website-text
 {
-    border: rgb(90, 0, 174, 30%) 2px dotted;
+    /* border: rgb(90, 0, 174, 30%) 2px dotted; */
     border-radius: 1%;
     width: 45%;
     margin-right:4vw;
