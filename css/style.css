@@ -13,11 +13,15 @@ html, body
     
 } 
 
+h1
+{
+    font-size: calc(35px + 2vw);
+    font-family: 'Rubik Moonrocks', cursive;
+    text-decoration: none;
+}
 h1 > a
 {
-    font-family: 'Rubik Moonrocks', cursive;
-    font-size: calc(40px + 0.9vw);
-    /* border-bottom: 1px solid black; */
+    
     padding: 0.2vw;
 
 }
@@ -25,7 +29,7 @@ h1 > a
 h2
 {
     font-family: 'DM Mono', monospace;
-    font-size: calc(7px + 1.6vw);
+    font-size: calc(18px + 1vw);
     /* background-color: rgba(255, 236, 236, 0.8); */
 }
 
@@ -64,11 +68,12 @@ a:hover
 
 img
 {
+    border-radius: 1%;
     width: 95%;
     height: 100%;
     object-fit: cover;
     padding-left: 3vw;
-    border-radius: 1%;
+    
     /* border: 2px blue solid; */
 }
 
@@ -109,21 +114,22 @@ p
     justify-content: flex-start;
     align-items: center;
     text-decoration: none;
+
+    font-family: 'Rubik Moonrocks', cursive;
+    font-size: calc(40px + 5vw);
 }
 
 .topnav
 {
     width: 50%;
-    padding-left:10%;
-    /* border: blue 1px dotted; */
 
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: flex-end;
+    margin-right: 5.5vw;
 }
 
-.artist-intro
+#artist-intro
 {
     /* border: 2px green solid; */
     width: 95%;
@@ -132,7 +138,7 @@ p
     color:rgb(39, 33, 33);
 }
 
-.developer-intro
+#developer-intro
 {
     /* border: 2px red solid; */
     width: 95%;
@@ -147,39 +153,44 @@ p
     height: 80%;
     display: flex;
     padding:1vw;
+    overflow: auto;
+
 }
 
-#website-text
+.post
 {
-    /* border: rgb(90, 0, 174, 30%) 2px dotted; */
-    border-radius: 1%;
-    width: 45%;
-    margin-right:3vw;
-
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#website-text {
+    display: grid;
+    grid-template-columns: 10% 1fr;
+    align-items: center;
     justify-content: center;
-    align-items: center;
+    background-color: rgb(230, 230, 231, 50%);
+    color: rgb(6, 2, 2);
+    margin-right:3.5vw;
 
-    /* background-color: rgb(213, 230, 61);  */
-    background-color: rgb(230, 230, 231, 50%); 
-    color: rgb(6, 2, 2); 
-    
-}
+  }
 
-
-.footer
-{
-    height: 10%;
-
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    font-family: 'DM Mono', monospace;
-    font-size: calc(12px + 0.2vw);
-
-    /* border: 1px black solid; */
-}
+  .footer
+  {
+      height: 10%;
+      width: 100%;
+  
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      font-family: 'DM Mono', monospace;
+      font-size: calc(12px + 0.2vw);
+      padding-top:2vw;
+      padding-right:2vw;
+      position: absolute;
+      bottom: 0;
+      text-align: right;
+  }
 
 .bottom-nav
 {
@@ -202,34 +213,16 @@ p
 
 .spacer
 {
-    border: 2px;
-    min-height:15px;
-    min-width: 300px;
+    /* border: 2px black solid; */
+    min-height:1vh;
+    min-width: calc(5px + 5vw);
 }
 
 
- /* for mobile  */
-
-.topnav_mobile
-{
-    display:none;
-}
-
-.main_mobile
-{
+.mobile-text-section
+  {
     display: none;
-}
-
-.sitename_mobile
-{
-    display: none;
-}
-
-.intro_text_mobile
-{
-    display: none;
-}
-
+  }
 
 
 #media-logo
@@ -238,97 +231,245 @@ p
     width:20px;
 }
 
-
-@media (max-width:800px) 
-{
-    .container
-    {
-        display: flex;
-        flex-direction:column;
-        min-height: 100vh;
-    }
-
-    .header 
-    {
-        display: flex;
-        justify-content: center;
-    }
-
-    h1 > a 
-    {
-        font-size: calc(20px + 2vw);
-        font-family: 'Rubik', sans-serif;
-    }
-
-
+@media (max-width: 1380px) {
     h2
     {
-        font-size: calc(14px + 0.5vw);
-        white-space: nowrap;
+        font-size: calc(18px + 1vw);
     }
-    .main
-    {
-        display: flex;
-        flex-direction:column;
-        justify-content: center;
-        flex: 1;
-        padding:10px;
-        padding-bottom: 20%;
+}
 
-        height:60%;
-        width:100%;
+
+
+@media (max-width: 955px) {
+    .container {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
     }
+  
+    .header {
+      display: flex;
+      justify-content: center;
+      height: 15%;
+      flex-wrap: wrap;
+    }
+  
+    .sitename 
+    {
+        display:flex;
+        flex-direction: row;
+        justify-content: flex-start;
+
+        padding:1vw;;
+        margin:1vw;
+    }
+
+    h1 
+    {
+        font-size: calc(22px + 4vw);
+    }
+
+    .topnav {
+      background-color: #ffffff;
+      color: #272727;
+      padding: 20px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      min-height: 20%;
+      margin-right:2vw;;
+      padding-bottom:4vw;
+
+
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+    }
+  
+    .main {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      flex: 1;
+      padding: 10px;
+      height: 60%;
+      width: 100%;
+    }
+  
+    .homepage-img {
+        /* position: relative;
+        top: 0;
+        left: 0; */
+        width: 100%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #ffffff;
+        padding:0;
+        margin:0;
+      }
+      
+      .homepage-img img 
+      {
+        max-width: 90%;
+        max-height: 80%;
+        min-height: 90%;
+        object-fit:cover;
+        padding: 0;
+        margin: 0;
+      }
+      
+  
+    #website-text {
+      display: none;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+      gap: 2vw;
+      width: 100%;
+      margin: 0%;
+      padding-left: 5vw;
+    }
+  
+    #text-section {
+      width: 90%;
+      text-align: start;
+      margin: 2vw;
+      display: none;
+    }
+
+    .mobile-text-section
+  {
+    font-size: calc(3px + 0.5vw);
+    height:6vh;
+    width:70%;
+    min-height:66px;
+    margin: 2vh;
+    border: rgba(77, 77, 77, 0.128) 2px dotted;
+    border-radius: 1vw;
+
+    /* background-color: rgb(230, 230, 231, 50%);  */
+    color: rgb(6, 2, 2); 
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+    
+    .developer-intro {
+      font-size: calc(8px + 2vw);
+    }
+  
+    .artist-intro {
+      font-size: calc(8px + 2vw);
+    }
+
+    #computer-symbol
+    {
+    font-size:calc(5px + 2vh);
+    /* border:1px solid black; */
+    border-radius:50%;
+    }  
 
     img
     {
-        width:100%;
-        padding-right:2vw;
-    }
+        height:auto;
+        min-height:75vh;
+    };
 
-    .intro_text_computer
+    .main
     {
-        display:none;
+        padding-top: 0;
+        margin-top: 0;
     }
 
-    .intro_text_mobile
-    {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width:100%
-    }
-
-
-    .sitename
-    {
-        display: flex;
-        flex-direction: column;
-        justify-content:center;
-
-    }
-
-    .topnav
-    {
-        background-color: #ffffff;
-        color: #272727;
-        padding: 20px;
-        text-align: center;
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-    }
-
-    .resume
-    {
-        display: flex;
-        flex-direction: column;
-        padding-right:10px;
-    }
-
-    .footer
+    #website-text
     {
         display: none;
     }
 
+    .mobile-text-section
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top:2vh;
+        padding-bottom: 2vh;
+        gap:1vh;
+        width:50%;
+    }
 
-}
+    h2
+    {
+        font-size: calc(12px + 1vw);
+    }
+
+    .footer
+    {
+        /* min-height:10%; */
+        display: none;
+    }
+
+  }
+
+  @media (max-width: 599px) {
+    .hidden
+    {
+        display: none;
+    }
+
+    img
+    {
+        height:auto;
+        min-height:75vh;
+    }
+
+    .main
+    {
+        padding-top: 0;
+        margin-top: 0;
+    }
+
+    .header
+    {
+        height: 10vh;
+    }
+
+    #website-text
+    {
+        display: none;
+    }
+
+    .mobile-text-section
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:1vh;
+        padding:2vh;
+        min-width:270px;
+    }
+
+    h2
+    {
+        font-size:calc(10px + 0.7vh);
+    }
+
+    #hidden
+    {
+        display: none;
+    }
+  
+    .hidden
+    {
+        display: none;
+    }
+
+  }
