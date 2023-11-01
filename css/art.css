@@ -78,13 +78,10 @@ p
     flex-direction: column;
     width:100vw;
     height:100vh;
-    padding-left: 1vw;
-    padding-right: 1vw;
 }
-
 .header 
 {
-    height: 10%;
+    height: 15%;
 
     display: flex;
     flex-direction: row;
@@ -93,21 +90,39 @@ p
 
     padding-top: 3vw;
     padding-bottom:3vw;
+
+    background-color: #dddddd;
+    background-color: #ffffff;
 }
 
 .sitename
 {
-    padding-left:4vw;
-
+    padding-left:2vw;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     text-decoration: none;
-
     font-family: 'Rubik Moonrocks', cursive;
     font-size: calc(40px + 5vw);
+}
 
-   
+.aboutme
+{
+    /* padding-right: 4vw;
+    padding-left: 6vw; */
+    margin-right: 4vh;
+    padding: 1vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: blanchedalmond;
+    background-color: rgba(238, 254, 176, 0.6);
+    background-color: rgba(254, 237, 176, 0.6);
+}
+
+.small-p
+{
+    font-size: calc(9px + 0.5vw);
 }
 
 .topnav
@@ -131,30 +146,30 @@ p
     flex-direction: column;
     justify-content: flex-start;
    
-    padding-left:4vw;
-    padding-right:4vw;
+    padding-left:2vh;
+    padding-right:2vh;
     overflow-y: auto;
     overflow-x: hidden;
+
+    background-color: #dddddd;
+    background-color: #ffffff;
 
 }
 
 .footer
 {
+    width: 103%;
     height: 10%;
-    width: 100%;
 
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     font-family: 'DM Mono', monospace;
     font-size: calc(12px + 0.2vw);
-    padding-top:2vw;
-    padding-right:6vw;
-    position: absolute;
-    bottom: 0;
-    text-align: right;
-
-    display: none;
+    padding-right:4vw;
+    padding-left:4vw;
+    padding-bottom:2vh;
+    margin-top: 4vh;
 }
 
 .bottom-nav
@@ -211,12 +226,15 @@ img
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding: 3vw;
+    padding: 2vh;
+    margin-right:2vh;
+    margin-top: 2vh;
 }
 
 .art-description p
 {
     font-size: calc(7px + 1vw);
+ 
 }
 
 .art-description h3
@@ -398,6 +416,15 @@ padding-bottom: 1vh;
     font-size: calc(8px + 1vw);
 }
 
+.highlighter
+{
+    background-color: rgb(246, 242, 175, 0.6);
+    background-color: rgba(250, 241, 75, 0.6);
+    background-color: rgba(238, 254, 176, 0.6);
+    background-color: rgba(247, 247, 247, 0.6);
+    padding: 1vh;
+}
+
 .video-title
 {
     display: flex;
@@ -491,8 +518,13 @@ iframe #bike-video
 
 .comic-description 
 {
-  padding-top:2vw;
-  padding-bottom:1.5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 2vh;
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+
 }
 
 
@@ -519,9 +551,8 @@ iframe #bike-video
   
     .header {
       display: flex;
-      justify-content: center;
+      flex-direction: column;
       height: 15%;
-      flex-wrap: wrap;
     }
   
     .sitename 
@@ -533,6 +564,16 @@ iframe #bike-video
 
         padding:1vw;;
         margin:1vw;
+    }
+
+    .sitename {
+        padding-left: 2vw;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        text-decoration: none;
+        font-family: 'Rubik Moonrocks', cursive;
+        font-size: calc(40px + 5vw);
     }
 
     h1 
@@ -642,10 +683,7 @@ iframe #bike-video
   }
 
   @media (max-width: 599px) {
-    .hidden
-    {
-        display: none;
-    }
+   
 
     .header
     {
@@ -719,6 +757,96 @@ iframe #bike-video
     {
         display: flex;
         flex-direction:column;
+    }
+
+    .header
+    {
+        height:15vh;
+    }
+
+    .aboutme
+    {
+        margin: 0;
+        padding: 1vh;
+        background-color: #ffffff;
+        background-color: rgba(247, 247, 247, 0.6);
+        padding-bottom: 4vh;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:5px;
+
+    }
+
+    .main
+    {
+        display: flex;
+        flex: 1;
+    }
+
+    .contents
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .aboutme
+    {
+        visibility: hidden;
+    }
+  }
+
+  
+  @media (max-width: 425px) {
+
+    h3
+    {
+        font-size: calc(8px + 1vh);
+    }
+
+    .header
+    {
+        height:15vh;
+    }
+
+    .aboutme
+    {
+        margin: 0;
+        padding: 1vh;
+        background-color: #ffffff;
+        background-color: rgba(247, 247, 247, 0.6);
+        padding-bottom: 4vh;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:5px;
+
+    }
+
+    .aboutme {
+        padding: 1vh;
+        display: flex;
+        flex-direction: column; /* Added to make it a column */
+        justify-content: center;
+        background-color: blanchedalmond;
+        background-color: rgba(238, 254, 176, 0.6);
+        background-color: rgba(254, 237, 176, 0.6);
+    }
+
+    .main
+    {
+        display: flex;
+        flex: 1;
+    }
+
+    .contents
+    {
+        display: flex;
+        flex-direction: column;
     }
   }
 

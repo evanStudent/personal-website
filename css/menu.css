@@ -87,6 +87,7 @@ p
 
     background-color: #dddddd;
     background-color: #ffffff;
+    /* background-color: #dddddd; */
 }
 
 .sitename
@@ -102,11 +103,17 @@ p
 
 .aboutme
 {
-    padding-right: 4vw;
-    padding-left: 6vw;
+    /* padding-right: 4vw;
+    padding-left: 6vw; */
+    margin-right: 4vh;
+    padding: 1vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: blanchedalmond;
+    /* background-color: rgba(238, 254, 176, 0.6); */
+    background-color: rgba(254, 237, 176, 0.6);
+    
 }
 
 .topnav
@@ -119,28 +126,16 @@ p
     margin-right: 5.5vw;
 }
 
-
-/* .main
-{
-    height: 75%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    padding-left:4vw;
-    padding-right:4vw;
-    overflow: hidden;
-    position: relative;
-} */
-
 .main {
     display: flex;
     flex-direction: column;
     justify-content: center; /* Center the content vertically */
     align-items: center; /* Center the content horizontally */
-    height: 100%;
+    height: 70%;
     overflow: hidden; /* Hide overflowing image */
     position: relative;
+    background-color: #dddddd;
+    background-color: #ffffff;
 }
 
 .contents
@@ -274,6 +269,11 @@ button:hover
     border:1px black solid;
 }
 
+.small-p
+{
+    font-size: calc(9px + 0.5vw);
+}
+
 
 @media (max-width: 955px) {
     .container {
@@ -386,14 +386,14 @@ button:hover
   }
 
   @media (max-width: 599px) {
-    .hidden
-    {
-        display: none;
-    }
 
     .header
     {
         height: 10vh;
+    }
+
+    .main
+    {
     }
 
     h2
@@ -401,15 +401,15 @@ button:hover
         font-size:calc(10px + 0.7vh);
     }
 
-    #hidden
+    /* #hidden
     {
         display: none;
-    }
+    } */
   
-    .hidden
+    /* .hidden
     {
         display: none;
-    }
+    } */
 
     
   }
@@ -420,6 +420,52 @@ button:hover
     {
         font-size: calc(8px + 1vh);
     }
+
+    .header
+    {
+        height:15vh;
+    }
+
+    .aboutme
+    {
+        margin: 0;
+        padding: 1vh;
+        background-color: #ffffff;
+        background-color: rgba(247, 247, 247, 0.6);
+        padding-bottom: 4vh;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:5px;
+
+    }
+
+    .main
+    {
+        display: flex;
+        flex: 1;
+    }
+
+    .contents
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .wrapper
+    {
+        width:100%;
+    }
+
+    img
+    {
+        width: 100%;
+    };
+
+
+
   }
 
   @media (max-width: 375px) {
