@@ -348,7 +348,7 @@ button:hover
       display: flex;
       flex-direction: column;
       justify-content: center;
-      height: 30vh;
+      height: 20vh;
     }
   
     .sitename 
@@ -357,8 +357,10 @@ button:hover
         flex-direction: row;
         justify-content: flex-start;
 
-        padding:1vw;;
+        padding:1vw;
+        padding-bottom: 0;
         margin:1vw;
+        margin-bottom:0;
 
         /* border: 1px rgb(153, 153, 153) dotted;
         border-radius: 10px; */
@@ -412,7 +414,7 @@ button:hover
         flex-direction: column;
         /* justify-content: space-evenly; */
         position: relative;
-        height:75vh;
+        height:80vh;
     }
 
     .post-grid
@@ -423,11 +425,7 @@ button:hover
 
     .footer
     {
-        background-color: pink;
-        background-color: rgba(44, 95, 183, 0.3);
-        background-color: rgba(255, 190, 222, 0.5);
-        padding: 8vh;
-        margin-bottom:0;
+        gap:20px;
     }
 
     .bottom-nav
@@ -482,25 +480,6 @@ button:hover
     {
         font-size:calc(10px + 0.7vh);
     }
-
-    .footer
-    {
-        /* display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: flex-start; */
-        gap:40px;
-        /* padding:0;
-        padding:0.75vh;
-        padding-left:2vh;
-        padding-right:2vh;
-        padding-top:3vh;
-        padding-bottom:3vh; */
-        background-color: rgba(254, 237, 176, 0.6);
-        background-color: rgba(213, 252, 74, 0.6);
-        background-color: rgba(44, 95, 183, 0.3);
-        background-color: rgba(255, 190, 222, 0.5);
-    }
     
     nav a 
     {
@@ -509,6 +488,16 @@ button:hover
 }
 
   @media (max-width: 452px) {
+
+    .header
+    {
+        height: 22vh;
+    }
+
+    .main
+    {
+        height:78vh;
+    }
 
     h3
     {
@@ -535,13 +524,7 @@ button:hover
         flex-direction: column;
     }
 
-    .footer
-    {
-        flex-direction: column;
-        gap:3px;
-        padding-bottom: 15vh;
-        padding-top: 8vh;
-    }
+
   }
 
   @media (max-width: 380px) {

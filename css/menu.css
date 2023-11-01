@@ -107,6 +107,7 @@ p
     display: flex;
     flex-direction: column;
     justify-content: center;
+    /* align-items: center; */
     background-color: blanchedalmond;
     background-color: rgba(122, 252, 74, 0.6);
     background-color: rgba(213, 252, 74, 0.6);
@@ -131,7 +132,7 @@ p
     flex-direction: column;
     justify-content: center; /* Center the content vertically */
     align-items: center; /* Center the content horizontally */
-    height: 70%;
+    height: 75vh;
     overflow: hidden; /* Hide overflowing image */
     position: relative;
     background-color: #dddddd;
@@ -285,7 +286,7 @@ button:hover
     .header {
       display: flex;
       justify-content: center;
-      height: 15%;
+      height: 25vh;
       flex-wrap: wrap;
     }
   
@@ -337,6 +338,7 @@ button:hover
         flex-direction: column;
         justify-content: space-evenly;
         position: relative;
+        height:75vh;
     }
 
 
@@ -365,7 +367,7 @@ button:hover
 
   }
 
-  @media (max-width: 720px) {
+  @media (max-width: 830px) {
 
     button {
         width: auto; /* Remove the fixed width */
@@ -381,35 +383,61 @@ button:hover
         overflow: hidden; /* Hide overflowing text */
         text-overflow: ellipsis; /* Add ellipsis (...) for overflowing text */
       }
+
+      .contents
+      {
+          display: flex;
+          flex-direction: column;
+      }
+  
+      .wrapper
+      {
+          width:100%;
+          overflow-y: auto;
+      }
+  
+      img
+      {
+          width:100%
+      };
+  
+
+
+
       
 
   }
 
   @media (max-width: 599px) {
 
-    .header
-    {
-        height: 10vh;
-    }
-
-    .main
-    {
-    }
 
     h2
     {
         font-size:calc(10px + 0.7vh);
     }
 
-    /* #hidden
+    .main
     {
-        display: none;
-    } */
-  
-    /* .hidden
+        display: flex;
+        flex: 1;
+    }
+
+    .contents
     {
-        display: none;
-    } */
+        display: flex;
+        flex-direction: column;
+    }
+
+    .wrapper
+    {
+        width:100%;
+    }
+
+    img
+    {
+        width: 100%;
+    };
+
 
     
   }
@@ -423,9 +451,9 @@ button:hover
 
     .header
     {
-        height:15vh;
+        height:22vh;
     }
-
+/* 
     .aboutme
     {
         margin: 0;
@@ -440,12 +468,16 @@ button:hover
         align-items: center;
         gap:5px;
 
+    } */
+
+    .aboutme
+    {
+        align-items: center;
     }
 
     .main
     {
-        display: flex;
-        flex: 1;
+        height: 78vh;
     }
 
     .contents

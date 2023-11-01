@@ -81,15 +81,15 @@ p
 }
 .header 
 {
-    height: 15%;
+    height: 15vh;
 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    gap: 20px;
 
-    padding-top: 3vw;
-    padding-bottom:3vw;
+    padding: 2vh;
 
     background-color: #dddddd;
     background-color: #ffffff;
@@ -97,7 +97,6 @@ p
 
 .sitename
 {
-    padding-left:2vw;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -108,10 +107,7 @@ p
 
 .aboutme
 {
-    /* padding-right: 4vw;
-    padding-left: 6vw; */
-    margin-right: 4vh;
-    padding: 1vh;
+    padding: 2vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -140,7 +136,7 @@ p
 .main
 {
     /* border: 2px red dotted; */
-    height: 90%;
+    height: 85vh;
     display: flex;
     /* flex:1; */
     flex-direction: column;
@@ -552,28 +548,21 @@ iframe #bike-video
     .header {
       display: flex;
       flex-direction: column;
-      height: 15%;
+      height: 20vh;
+      max-height: 200px;
+    }
+
+    .aboutme
+    {
+        margin: 0;
     }
   
-    .sitename 
-    {
-        display:flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        position: absolute;
-
-        padding:1vw;;
-        margin:1vw;
-    }
 
     .sitename {
-        padding-left: 2vw;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
         text-decoration: none;
         font-family: 'Rubik Moonrocks', cursive;
         font-size: calc(40px + 5vw);
+        padding: 0px;
     }
 
     h1 
@@ -610,6 +599,7 @@ iframe #bike-video
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
+        height:80vh;
     }
 
 
@@ -625,8 +615,7 @@ iframe #bike-video
 
     .footer
     {
-        /* min-height:10%; */
-        display: none;
+        gap:20px;
     }
 
     .video-container
@@ -687,7 +676,12 @@ iframe #bike-video
 
     .header
     {
-        height: 10vh;
+        height: 20vh;
+    }
+
+    .main
+    {
+        height: 80vh;
     }
 
     h2
@@ -748,10 +742,6 @@ iframe #bike-video
         visibility: hidden;
     }
 
-    #god-radio
-    {
-        margin-top: calc( 5px + -5vh);
-    }
 
     .photo-grid
     {
@@ -761,16 +751,14 @@ iframe #bike-video
 
     .header
     {
-        height:15vh;
+        height:22vh;
     }
 
     .aboutme
     {
         margin: 0;
         padding: 1vh;
-        background-color: #ffffff;
-        background-color: rgba(247, 247, 247, 0.6);
-        padding-bottom: 4vh;
+        /* padding-bottom: 4vh; */
 
         display: flex;
         flex-direction: column;
@@ -783,7 +771,7 @@ iframe #bike-video
     .main
     {
         display: flex;
-        flex: 1;
+        height:75vh;
     }
 
     .contents
@@ -792,10 +780,6 @@ iframe #bike-video
         flex-direction: column;
     }
 
-    .aboutme
-    {
-        visibility: hidden;
-    }
   }
 
   
@@ -808,7 +792,7 @@ iframe #bike-video
 
     .header
     {
-        height:15vh;
+        height:22vh;
     }
 
     .aboutme
