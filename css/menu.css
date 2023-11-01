@@ -82,17 +82,17 @@ p
     justify-content: space-between;
     align-items: center;
 
-    padding-top: 3vw;
-    padding-bottom:3vw;
+    gap: 20px;
+
+    padding: 2vh;
 
     background-color: #dddddd;
     background-color: #ffffff;
-    /* background-color: #dddddd; */
+    /* background-color: #ffffff; */
 }
 
 .sitename
 {
-    padding-left:2vw;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -103,18 +103,18 @@ p
 
 .aboutme
 {
-    /* padding-right: 4vw;
-    padding-left: 6vw; */
-    margin-right: 4vh;
-    padding: 1vh;
+    padding: 2vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-color: blanchedalmond;
-    /* background-color: rgba(238, 254, 176, 0.6); */
+    background-color: rgba(122, 252, 74, 0.6);
+    background-color: rgba(213, 252, 74, 0.6);
+    background-color: rgba(238, 254, 176, 0.6);
     background-color: rgba(254, 237, 176, 0.6);
-    
+    /* background-color: rgba(247, 247, 247, 0.6); */
 }
+
 
 .topnav
 {
