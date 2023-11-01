@@ -141,11 +141,15 @@ td
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
 
     padding:2.6vw;
+}
 
-
+.aboutme
+{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
 }
 
 .skills

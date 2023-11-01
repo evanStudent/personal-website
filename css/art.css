@@ -125,13 +125,12 @@ p
 .main
 {
     /* border: 2px red dotted; */
-    height: 80%;
+    height: 90%;
     display: flex;
     /* flex:1; */
     flex-direction: column;
     justify-content: flex-start;
    
-    padding:2vw;
     padding-left:4vw;
     padding-right:4vw;
     overflow-y: auto;
@@ -154,6 +153,8 @@ p
     position: absolute;
     bottom: 0;
     text-align: right;
+
+    display: none;
 }
 
 .bottom-nav
@@ -286,7 +287,6 @@ padding-bottom: 1vh;
 #god-radio
 {
     padding-bottom: 3vw ;
-    padding-top:3vw;
     border-bottom: 1px black dotted;
 }
 

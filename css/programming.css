@@ -135,6 +135,13 @@ p
     overflow-x: hidden;
 }
 
+.aboutme
+{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
 .post
 {
     display: flex;
