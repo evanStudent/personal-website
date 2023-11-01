@@ -184,8 +184,13 @@ p
 
 .project-text
 {
-    padding-left: 2vh;
-    margin-left:1vh;
+    /* padding-left: 2vh;
+    margin-left:1vh; */
+
+    padding:2vh;
+    margin-bottom:4vh;
+    margin:2vh;
+    margin-top:1vh;
 }
 
 .post
