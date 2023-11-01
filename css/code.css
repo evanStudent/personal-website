@@ -87,6 +87,8 @@ p
     justify-content: space-between;
     align-items: center;
 
+    gap: 20px;
+
     padding: 2vh;
 
     background-color: #dddddd;
@@ -190,7 +192,6 @@ p
     padding:2vh;
     margin-bottom:4vh;
     margin:2vh;
-    margin-top:1vh;
 }
 
 .post
@@ -332,6 +333,8 @@ button:hover
 
 
 
+
+
   
 
 
@@ -344,9 +347,9 @@ button:hover
   
     .header {
       display: flex;
+      flex-direction: column;
       justify-content: center;
-      height: 25vh;
-      flex-wrap: wrap;
+      height: 30vh;
     }
   
     .sitename 
@@ -410,6 +413,7 @@ button:hover
         flex-direction: column;
         /* justify-content: space-evenly; */
         position: relative;
+        height:75vh;
     }
 
     .post-grid
@@ -503,18 +507,13 @@ button:hover
     {
         padding: 1.5vh;
     }
+}
 
   @media (max-width: 452px) {
 
     h3
     {
         font-size: calc(8px + 1vh);
-    }
-
-    .header
-    {
-        justify-content: center;
-        align-items: flex-start;
     }
   
 
